@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(216, 216, 216);
+    color:rgb(25, 25, 25);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    position: fixed;
+    left:0px;
+    top:0px;
+    max-width:25%;
+    height:100%;
+    background-color:inherit;
+    text-align:center;
+    border:1px solid rgb(132, 132, 132);
+    overflow-y:scroll;
+}
+nav h2{
+    font-size:1.8em;
+    border-bottom:1px solid black;
+    position:sticky;
+    top:0;
+    z-index:1;
+    background-color: rgb(58, 58, 58);
+    color:white;
+    margin:0;
+    padding:2%;
+}
+.menu-list{
+    padding:0;
+    z-index:0;
+   
+    /* position:absolute; */
+    /* margin-right:15%; */
+    overflow-x:hidden;
+    margin-top:0%;
+    
+}
+.menu-list>li{
+    /* position: relative; */
+    width:100%;
+    padding:0%;
+    border-bottom:1px dotted rgb(4, 4, 116);
+    list-style-type:none;
+    font-size:1.4em;
+}
+
+.menu-list a{
+    display: block;
+    color: rgb(45, 45, 45);
+    text-decoration:none;
+    padding:2%;
+}
+.menu-list a:hover{
+    background-color: rgb(244, 154, 9);
+    color:rgb(8, 8, 8);
+}
+main{
+    position:absolute;
+    left:25%;
+    padding:1% 3%;
+    font-size:1.2em;
+}
+.main-list{
+    margin-left:5%;
+}
+.main-list li{
+    margin-bottom:2%;
+}
+.main-section{
+    border-bottom:3px solid rgb(160, 160, 160);
+    padding-bottom:3%;
+    margin-bottom:5%;
+}
+.main-section>pre{
+    background-color: rgb(94, 94, 94);
+    color:white;
+    border:1px solid black;
+    padding:2%;
+    border-radius:10px;
+}
+#reference a{
+    color:blue;
+}
+@media (max-width:770px){
+    nav h2{
+        font-size:1em;
+    }
+    .menu-list>li{
+        font-size:0.8em;
+    }
+    main{
+        font-size:0.7em;
+    }
+    main header{
+        font-size:0.9em;
+    }
+}
